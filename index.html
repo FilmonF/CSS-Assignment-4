@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .position {
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%,-50%);
+       
+       }
+        .main{
+            margin: 5px;
+            padding: 10px;
+            width: 800px;
+            text-align: left;
+            background-color: #D3D3D3;
+            border-radius: 5px;
+            display: block;
+
+
+        }
+         
+        input, .select__input {
+            border-radius: 2px;
+            border: none;
+            padding: 10px;
+            padding-left: 15px;
+            margin: 10px;
+            width: 93%;
+
+
+        }
+        .select__input{
+            width: 96%;
+        }
+
+        label {
+            margin: 10px;
+        }
+
+
+        input[type=submit]{
+            background-color: #2C8000;
+            margin-top: 10px;
+            padding: 20px 70px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            width: 96%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .select__input {
+  appearance: none;
+  border: 0;
+  margin: 10px;
+  }
+
+
+.dropdown button{
+    
+    background-color: #2C8000;
+    padding: 15px 20px;
+    border:none;
+    cursor: pointer;
+    
+
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+
+
+}
+.content{
+    display: none;
+    position: absolute;
+    background-color: #D3D3D3;
+    min-width: 150px;
+   
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover .button{
+    background-color: #6d9757;
+}
+
+.dropdown {
+    position: absolute;
+    left: 45%;
+    top: 80%;
+}
+
+  
+    </style>
+</head>
+<body>
+    <section class="position">
+        <form >
+            <div class="main">
+                <label for="First Name">First Name</label>
+                <div> <input type="text" placeholder="your name.."> </div>
+                <label for="Last NAme"> Last Name</label>
+                <div> <input type="text" placeholder="your last name.."> </div>
+                <label for="Country">Country</label>
+    
+                <div class="select">
+                    
+                  
+                    <select class="select__input" name="country-selector" id="country-selector">
+                      <option value="0">Australia</option>
+                      <option value=Er">Eritrea</option>
+                      <option value="Et">Ethiopia</option>
+                      <!-- other <option>s here -->
+                    </select>
+    
+                
+                <div>
+                    <input type="submit">
+                </div>
+                <div/>
+            </form>
+
+    </section>
+ 
+        <br><br><br><br><br>
+
+        <div class="dropdown" >
+            <button> Dropdown</button>
+            <div class="content">
+                <a href="l1">Link 1</a>
+                <a href="l2">Link 2</a>
+                <a href="l3">Link 3</a>
+        
+            </div>
+        </div>
+
+
+        
+        
+
+</body>
+</html>
